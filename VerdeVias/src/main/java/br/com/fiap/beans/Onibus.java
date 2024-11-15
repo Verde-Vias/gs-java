@@ -6,19 +6,17 @@ public class Onibus {
 	private String marca;
 	private String modelo;
 	private double valor;
-	private String corOnibus;
 	
 	
 	public Onibus() {
 		super();
 	}
-	public Onibus(int idOnibus, String marca, String modelo, double valor, String corOnibus) {
+	public Onibus(int idOnibus, String marca, String modelo, double valor) {
 		super();
 		this.idOnibus = idOnibus;
 		this.marca = marca;
 		this.modelo = modelo;
 		this.valor = valor;
-		this.corOnibus = corOnibus;
 	}
 	
 	public int getIdOnibus() {
@@ -45,14 +43,5 @@ public class Onibus {
 	public void setValor(double valor) {
 		this.valor = valor;
 	}
-	public String getCorOnibus() {
-		return corOnibus;
-	}
-	public void setCorOnibus(String corOnibus) {
-		this.corOnibus = corOnibus;
-	}
-	
-	
-
 	
 }
