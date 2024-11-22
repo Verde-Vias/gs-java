@@ -47,7 +47,7 @@ public class CarroResource {
 	// Atualizar 
 	@PUT
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response atualizarRs(Carro carro, @PathParam("id_carro") int idCarro) throws ClassNotFoundException, SQLException {
+	public Response atualizarRs(Carro carro, @PathParam("idCarro") int idCarro) throws ClassNotFoundException, SQLException {
 		carroBO.atualizarBo(carro);
 		
 		return Response.ok().build();
@@ -55,9 +55,9 @@ public class CarroResource {
 	
 	// Deletar
 	@DELETE
-	@Path("/{id_carro}")
+	@Path("/{idCarro}")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response deletarRs(@PathParam("id_carro") int idCarro) throws ClassNotFoundException, SQLException {
+	public Response deletarRs(@PathParam("idCarro") int idCarro) throws ClassNotFoundException, SQLException {
 		
 		carroBO.deletarBo(idCarro);
 		return Response.ok().build();
